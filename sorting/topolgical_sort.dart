@@ -15,6 +15,7 @@ List<int> topologicalSort(List<int> nodes, List<List<int>> edges) {
     }
     if (cycle) {
       print('warnning deadlock');
+      return [];
     }
   }
   return res;
